@@ -21,16 +21,7 @@ export function Hero() {
     return () => clearInterval(timer)
   }, [])
 
-  const [particles, setParticles] = useState<Array<{ left: string; animationDelay: string; animationDuration: string }>>([])
 
-  useEffect(() => {
-    const newParticles = [...Array(20)].map(() => ({
-      left: `${Math.random() * 100}%`,
-      animationDelay: `${Math.random() * 10}s`,
-      animationDuration: `${10 + Math.random() * 10}s`,
-    }))
-    setParticles(newParticles)
-  }, [])
 
   const scrollToContact = () => {
     const element = document.querySelector("#contacto")
@@ -55,16 +46,7 @@ export function Hero() {
         />
       </div>
 
-      {/* Floating particles */}
-      <div className="absolute inset-0 overflow-hidden">
-        {particles.map((style, i) => (
-          <div
-            key={i}
-            className="absolute w-1 h-1 bg-primary rounded-full animate-code-rain opacity-50"
-            style={style}
-          />
-        ))}
-      </div>
+
 
       {/* Scan line effect */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
