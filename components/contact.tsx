@@ -36,7 +36,14 @@ export function Contact() {
     <section id="contacto" className="py-20">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center">Contacto</h2>
+          <div className="text-center mb-6">
+            <div className="inline-block font-mono text-sm text-muted-foreground mb-2">
+              <span className="text-primary">{">"}</span> contact.connect()
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
+              Contacto
+            </h2>
+          </div>
 
           <p className="text-lg text-muted-foreground mb-12 text-center leading-relaxed">
             Interesado en colaborar o discutir oportunidades de transformación digital. No dudes en contactarme.
