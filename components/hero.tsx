@@ -130,7 +130,7 @@ export function Hero() {
               size="lg"
               variant="outline"
               asChild
-              className="shadow-lg bg-transparent border-primary hover:bg-primary/10"
+              className="shadow-lg bg-transparent border-primary hover:bg-primary/10 hover:text-primary"
             >
               <a
                 href="https://www.linkedin.com/in/darvin-cotrina"
