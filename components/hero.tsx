@@ -21,6 +21,17 @@ export function Hero() {
     return () => clearInterval(timer)
   }, [])
 
+  const [particles, setParticles] = useState<Array<{ left: string; animationDelay: string; animationDuration: string }>>([])
+
+  useEffect(() => {
+    const newParticles = [...Array(20)].map(() => ({
+      left: `${Math.random() * 100}%`,
+      animationDelay: `${Math.random() * 10}s`,
+      animationDuration: `${10 + Math.random() * 10}s`,
+    }))
+    setParticles(newParticles)
+  }, [])
+
   const scrollToContact = () => {
     const element = document.querySelector("#contacto")
     if (element) {
