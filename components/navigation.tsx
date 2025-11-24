@@ -34,21 +34,59 @@ export function Navigation() {
     }
   }
 
+  const [logoText, setLogoText] = useState({ first: "D", last: "C" })
+  const [isLogoHovered, setIsLogoHovered] = useState(false)
+
+  useEffect(() => {
+    let interval: NodeJS.Timeout
+    const targetFirst = "Darvin"
+    const targetLast = "Cotrina"
+
+    if (isLogoHovered) {
+      interval = setInterval(() => {
+        setLogoText((prev) => {
+          const nextFirst = targetFirst.slice(0, Math.max(1, prev.first.length + 1))
+          const nextLast = targetLast.slice(0, Math.max(1, prev.last.length + 1))
+
+          if (nextFirst === targetFirst && nextLast === targetLast) {
+            clearInterval(interval)
+          }
+          return { first: nextFirst, last: nextLast }
+        })
+      }, 50)
+    } else {
+      interval = setInterval(() => {
+        setLogoText((prev) => {
+          const nextFirst = prev.first.slice(0, Math.max(1, prev.first.length - 1))
+          const nextLast = prev.last.slice(0, Math.max(1, prev.last.length - 1))
+
+          if (nextFirst === "D" && nextLast === "C") {
+            clearInterval(interval)
+          }
+          return { first: nextFirst, last: nextLast }
+        })
+      }, 30)
+    }
+
+    return () => clearInterval(interval)
+  }, [isLogoHovered])
+
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/80 backdrop-blur-xl shadow-lg border-b border-primary/20" : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-background/80 backdrop-blur-xl shadow-lg border-b border-primary/20" : "bg-transparent"
+        }`}
     >
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <button
             onClick={() => scrollToSection("#inicio")}
-            className="flex items-center gap-2 text-xl font-bold text-primary font-mono hover:text-accent transition-colors group"
+            onMouseEnter={() => setIsLogoHovered(true)}
+            onMouseLeave={() => setIsLogoHovered(false)}
+            className="flex items-center gap-2 text-xl font-bold text-primary font-mono transition-colors group"
           >
             <Terminal className="h-5 w-5 group-hover:animate-pulse" />
             <span className="relative">
-              {"<DC/>"}
+              {`<${logoText.first}${logoText.first.length > 1 || logoText.last.length > 1 ? ' ' : ''}${logoText.last}/>`}
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300" />
             </span>
           </button>
