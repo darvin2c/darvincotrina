@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Inter, JetBrains_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
+import { VectorizedBackground } from "@/components/vectorized-background"
 import { GravityBackground } from "@/components/gravity-background"
 
 const _inter = Inter({ subsets: ["latin"] })
@@ -101,6 +102,7 @@ export default function RootLayout({
     <html lang="es">
       <body className={`font-sans antialiased`}>
         <GravityBackground />
+        <VectorizedBackground />
         {children}
         <Analytics />
       </body>
