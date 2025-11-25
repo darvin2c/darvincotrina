@@ -51,7 +51,7 @@ export function Education() {
 
           <div className="grid md:grid-cols-2 gap-6">
             {education.map((edu, index) => (
-              <Card key={index} className="p-6 hover:shadow-lg transition-shadow relative">
+              <Card key={index} className="p-6 hover:shadow-lg transition-all relative !bg-black/30 backdrop-blur-sm border-white/10">
                 {edu.featured && (
                   <div className="absolute top-4 right-4">
                     <Award className="h-5 w-5 text-accent" />

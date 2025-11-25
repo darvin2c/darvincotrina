@@ -53,7 +53,7 @@ export function Contact() {
             {contactInfo.map((info, index) => {
               const Icon = info.icon
               const content = (
-                <Card className="p-6 hover:shadow-lg transition-shadow h-full">
+                <Card className="p-6 hover:shadow-lg transition-all h-full !bg-black/60 backdrop-blur-sm border-white/10">
                   <div className="flex items-center gap-4">
                     <div className="p-3 rounded-lg bg-primary/10 text-primary">
                       <Icon className="h-6 w-6" />

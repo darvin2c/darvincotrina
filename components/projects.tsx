@@ -75,7 +75,7 @@ export function Projects() {
             {projects.map((project, index) => (
               <Card
                 key={index}
-                className="p-6 hover:shadow-2xl hover:shadow-secondary/20 transition-all group bg-card/50 backdrop-blur-sm border-primary/20 hover:border-secondary/50 relative overflow-hidden"
+                className="p-6 hover:shadow-2xl hover:shadow-secondary/20 transition-all group !bg-black/40 backdrop-blur-sm border-white/10 hover:border-secondary/50 relative overflow-hidden"
               >
                 <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/10 rounded-full blur-3xl group-hover:bg-secondary/20 transition-all" />
 

@@ -83,9 +83,9 @@ export function Skills() {
               return (
                 <Card
                   key={index}
-                  className={`group relative bg-card/50 backdrop-blur-sm border transition-all duration-300 ${isHovered
+                  className={`group relative !bg-black/50 backdrop-blur-sm border transition-all duration-300 ${isHovered
                     ? 'border-primary shadow-lg shadow-primary/20'
-                    : 'border-border hover:border-primary/50'
+                    : 'border-white/10 hover:border-primary/50'
                     }`}
                   onMouseEnter={() => setHoveredIndex(index)}
                   onMouseLeave={() => setHoveredIndex(null)}
@@ -129,7 +129,7 @@ export function Skills() {
           </div>
 
           {/* Stack Tecnológico minimalista */}
-          <Card className="p-8 bg-card/50 backdrop-blur-sm border-border">
+          <Card className="p-8 !bg-black/50 backdrop-blur-sm border-white/10">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-1 h-8 bg-primary" />
               <h3 className="text-2xl font-semibold text-foreground">

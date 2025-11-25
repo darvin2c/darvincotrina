@@ -64,7 +64,7 @@ export function About() {
               return (
                 <Card
                   key={index}
-                  className="p-6 hover:shadow-2xl hover:shadow-primary/20 transition-all hover:border-primary/50 bg-card/50 backdrop-blur-sm group relative overflow-hidden"
+                  className="p-6 hover:shadow-2xl hover:shadow-primary/20 transition-all hover:border-primary/50 !bg-black/5 backdrop-blur-sm group relative overflow-hidden border-white/10"
                 >
                   <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-3xl group-hover:bg-primary/10 transition-all" />
                   <div className="flex items-start gap-4 relative z-10">

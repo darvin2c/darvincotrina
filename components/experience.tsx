@@ -91,7 +91,7 @@ export function Experience() {
             {experiences.map((exp, expIndex) => (
               <Card
                 key={expIndex}
-                className="p-6 hover:shadow-2xl hover:shadow-primary/20 transition-all bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50 group"
+                className="p-6 hover:shadow-2xl hover:shadow-primary/20 transition-all !bg-black/20 backdrop-blur-sm border-white/10 hover:border-primary/50 group"
               >
                 <div className="flex items-start gap-4 mb-6">
                   <div className="p-3 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors border border-primary/30">
