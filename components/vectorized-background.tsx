@@ -22,7 +22,7 @@ export function VectorizedBackground() {
     const canvasRef = useRef<HTMLCanvasElement>(null)
     const [points, setPoints] = useState<Point[]>([])
     const [revealProgress, setRevealProgress] = useState(0) // Start at 0 for minimal points
-    const animationFrameRef = useRef<number | undefined>()
+    const animationFrameRef = useRef<number | undefined>(undefined)
 
     // Extract points from image
     useEffect(() => {
