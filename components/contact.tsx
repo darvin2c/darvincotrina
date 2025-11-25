@@ -33,8 +33,8 @@ export function Contact() {
   ]
 
   return (
-    <section id="contacto" className="py-20">
-      <div className="container mx-auto px-4">
+    <section id="contacto" className="py-20 relative">
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-6">
             <div className="inline-block font-mono text-sm text-muted-foreground mb-2">
@@ -45,7 +45,7 @@ export function Contact() {
             </h2>
           </div>
 
-          <p className="text-lg text-muted-foreground mb-12 text-center leading-relaxed">
+          <p className="text-lg text-muted-foreground mb-12 text-center leading-relaxed max-w-md mx-auto">
             Interesado en colaborar o discutir oportunidades de transformación digital. No dudes en contactarme.
           </p>
 

@@ -61,14 +61,14 @@ export function Skills() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Header minimalista */}
-          <div className="mb-16">
+          <div className="mb-16 text-center">
             <div className="inline-block font-mono text-sm text-muted-foreground mb-2">
               <span className="text-primary">{">"}</span> skills.display()
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-2 text-foreground">
               Habilidades
             </h2>
-            <div className="w-20 h-1 bg-primary mb-4" />
+            <div className="w-20 h-1 bg-primary mb-4 mx-auto" />
             <p className="text-muted-foreground">
               Competencias estratégicas en transformación digital
             </p>

@@ -38,7 +38,7 @@ export function Education() {
 
   return (
     <section id="educacion" className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <div className="inline-block font-mono text-sm text-muted-foreground mb-2">
