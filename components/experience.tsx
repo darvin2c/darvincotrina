@@ -79,7 +79,7 @@ export function Experience() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <div className="inline-block font-mono text-sm text-muted-foreground mb-2">
+            <div className="inline-block font-mono text-sm text-foreground/70 mb-2">
               <span className="text-secondary">{">"}</span> experience.fetch()
             </div>
             <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
@@ -102,7 +102,7 @@ export function Experience() {
                       {exp.company}
                       <Code2 className="h-4 w-4 text-primary opacity-50" />
                     </h3>
-                    <p className="text-muted-foreground font-mono text-sm">{exp.location}</p>
+                    <p className="text-foreground/70 font-mono text-sm">{exp.location}</p>
                   </div>
                 </div>
 
@@ -123,7 +123,7 @@ export function Experience() {
                         {position.responsibilities.map((resp, respIndex) => (
                           <li
                             key={respIndex}
-                            className="text-muted-foreground text-sm leading-relaxed flex items-start gap-2"
+                            className="text-foreground/90 text-sm leading-relaxed flex items-start gap-2"
                           >
                             <span className="text-primary mt-1.5 font-mono">{">"}</span>
                             <span>{resp}</span>

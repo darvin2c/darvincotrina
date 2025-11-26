@@ -97,7 +97,7 @@ export function Navigation() {
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors relative group font-mono"
+                className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors relative group font-mono"
               >
                 <span className="text-secondary">//</span> {item.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300" />
@@ -123,7 +123,7 @@ export function Navigation() {
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className="block w-full text-left px-4 py-2 text-sm font-medium text-muted-foreground hover:text-primary hover:bg-primary/10 rounded-md transition-colors font-mono border border-transparent hover:border-primary/30"
+                className="block w-full text-left px-4 py-2 text-sm font-medium text-foreground/80 hover:text-primary hover:bg-primary/10 rounded-md transition-colors font-mono border border-transparent hover:border-primary/30"
               >
                 <span className="text-secondary">//</span> {item.label}
               </button>

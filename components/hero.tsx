@@ -59,19 +59,19 @@ export function Hero() {
             <div className="bg-card/80 backdrop-blur-sm border border-primary/30 rounded-lg p-4 shadow-2xl animate-pulse-glow">
               <div className="flex items-center gap-2 mb-2">
                 <Terminal className="h-4 w-4 text-primary" />
-                <span className="text-xs text-muted-foreground font-mono">~/profile/darvin-cotrina</span>
+                <span className="text-xs text-foreground/70 font-mono">~/profile/darvin-cotrina</span>
               </div>
               <div className="font-mono text-left text-sm">
                 <span className="text-secondary">const</span> <span className="text-primary">profile</span>{" "}
-                <span className="text-muted-foreground">=</span> <span className="text-accent">{"{"}</span>
+                <span className="text-foreground/70">=</span> <span className="text-accent">{"{"}</span>
                 <br />
-                <span className="ml-4 text-muted-foreground">name:</span>{" "}
+                <span className="ml-4 text-foreground/70">name:</span>{" "}
                 <span className="text-accent">"Darvin Cotrina"</span>,
                 <br />
-                <span className="ml-4 text-muted-foreground">role:</span>{" "}
+                <span className="ml-4 text-foreground/70">role:</span>{" "}
                 <span className="text-accent">"Digital Transformation"</span>,
                 <br />
-                <span className="ml-4 text-muted-foreground">experience:</span>{" "}
+                <span className="ml-4 text-foreground/70">experience:</span>{" "}
                 <span className="text-secondary">15+</span>
                 <br />
                 <span className="text-accent">{"}"}</span>
@@ -87,11 +87,11 @@ export function Hero() {
           </h1>
 
           <div className="mb-6 font-mono text-primary text-xl md:text-2xl">
-            <span className="text-muted-foreground">{">"}</span> {text}
+            <span className="text-foreground/70">{">"}</span> {text}
             <span className="animate-pulse">|</span>
           </div>
 
-          <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto text-balance leading-relaxed">
+          <p className="text-lg text-foreground/90 mb-8 max-w-3xl mx-auto text-balance leading-relaxed">
             Más de 15 años de experiencia liderando la modernización tecnológica en entornos corporativos. Especializado
             en inteligencia artificial, integración de ecosistemas digitales y gobierno digital.
           </p>

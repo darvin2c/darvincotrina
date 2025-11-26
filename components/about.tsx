@@ -44,7 +44,7 @@ export function About() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <div className="inline-block font-mono text-sm text-muted-foreground mb-2">
+            <div className="inline-block font-mono text-sm text-foreground/70 mb-2">
               <span className="text-secondary">{">"}</span> about.query()
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-balance bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
@@ -52,7 +52,7 @@ export function About() {
             </h2>
           </div>
 
-          <p className="text-lg text-muted-foreground mb-12 text-center leading-relaxed max-w-3xl mx-auto text-balance">
+          <p className="text-lg text-foreground/90 mb-12 text-center leading-relaxed max-w-3xl mx-auto text-balance">
             Ejecutivo con más de 15 años de experiencia liderando la modernización tecnológica en entornos corporativos.
             Reconocido por diseñar e implementar estrategias que convierten la tecnología en ventaja competitiva,
             impulsando organizaciones data-driven, ágiles y seguras.
@@ -74,7 +74,7 @@ export function About() {
                     <div className="flex-1">
                       <h3 className="font-semibold text-lg mb-1">{item.title}</h3>
                       <div className="font-mono text-xs text-secondary mb-2">{item.code}</div>
-                      <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
+                      <p className="text-foreground/90 text-sm leading-relaxed">{item.description}</p>
                     </div>
                   </div>
                 </Card>

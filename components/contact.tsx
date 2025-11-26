@@ -37,7 +37,7 @@ export function Contact() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-6">
-            <div className="inline-block font-mono text-sm text-muted-foreground mb-2">
+            <div className="inline-block font-mono text-sm text-foreground/70 mb-2">
               <span className="text-primary">{">"}</span> contact.connect()
             </div>
             <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
@@ -45,7 +45,7 @@ export function Contact() {
             </h2>
           </div>
 
-          <p className="text-lg text-muted-foreground mb-12 text-center leading-relaxed max-w-md mx-auto">
+          <p className="text-lg text-foreground/90 mb-12 text-center leading-relaxed max-w-md mx-auto">
             Interesado en colaborar o discutir oportunidades de transformación digital. No dudes en contactarme.
           </p>
 
@@ -59,7 +59,7 @@ export function Contact() {
                       <Icon className="h-6 w-6" />
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground mb-1">{info.label}</p>
+                      <p className="text-sm text-foreground/70 mb-1">{info.label}</p>
                       <p className="font-medium">{info.value}</p>
                     </div>
                   </div>
@@ -98,7 +98,7 @@ export function Contact() {
       {/* Footer */}
       <footer className="mt-20 pt-8 border-t border-border">
         <div className="container mx-auto px-4">
-          <p className="text-center text-muted-foreground text-sm">
+          <p className="text-center text-foreground/70 text-sm">
             © {new Date().getFullYear()} Darvin Cotrina Cervera. Todos los derechos reservados.
           </p>
         </div>

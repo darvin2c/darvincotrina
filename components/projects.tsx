@@ -63,7 +63,7 @@ export function Projects() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <div className="inline-block font-mono text-sm text-muted-foreground mb-2">
+            <div className="inline-block font-mono text-sm text-foreground/70 mb-2">
               <span className="text-secondary">{">"}</span> projects.showcase()
             </div>
             <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
@@ -100,7 +100,7 @@ export function Projects() {
                         <span className="text-accent">{project.code}</span>
                       </div>
 
-                      <p className="text-muted-foreground text-sm leading-relaxed mb-3">{project.description}</p>
+                      <p className="text-foreground/90 text-sm leading-relaxed mb-3">{project.description}</p>
                       <div className="flex flex-wrap gap-2">
                         {project.tags.map((tag, tagIndex) => (
                           <Badge

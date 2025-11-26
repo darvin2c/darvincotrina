@@ -41,7 +41,7 @@ export function Education() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <div className="inline-block font-mono text-sm text-muted-foreground mb-2">
+            <div className="inline-block font-mono text-sm text-foreground/70 mb-2">
               <span className="text-secondary">{">"}</span> education.load()
             </div>
             <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
@@ -64,7 +64,7 @@ export function Education() {
                   </div>
                   <div className="flex-1">
                     <h3 className="font-semibold text-lg mb-2">{edu.credential}</h3>
-                    <p className="text-muted-foreground font-medium mb-2">{edu.institution}</p>
+                    <p className="text-foreground/80 font-medium mb-2">{edu.institution}</p>
                     <Badge variant="outline">{edu.period}</Badge>
                   </div>
                 </div>

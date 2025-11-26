@@ -62,14 +62,14 @@ export function Skills() {
         <div className="max-w-6xl mx-auto">
           {/* Header minimalista */}
           <div className="mb-16 text-center">
-            <div className="inline-block font-mono text-sm text-muted-foreground mb-2">
+            <div className="inline-block font-mono text-sm text-foreground/70 mb-2">
               <span className="text-primary">{">"}</span> skills.display()
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-2 text-foreground">
               Habilidades
             </h2>
             <div className="w-20 h-1 bg-primary mb-4 mx-auto" />
-            <p className="text-muted-foreground">
+            <p className="text-foreground/90">
               Competencias estratégicas en transformación digital
             </p>
           </div>
@@ -110,9 +110,9 @@ export function Skills() {
                       {skill.items.map((item, itemIndex) => (
                         <li
                           key={itemIndex}
-                          className="flex items-start gap-2 text-sm text-muted-foreground group/item"
+                          className="flex items-start gap-2 text-sm text-foreground/90 group/item"
                         >
-                          <span className={`mt-1.5 w-1 h-1 rounded-full bg-muted-foreground transition-all duration-300 ${isHovered ? 'bg-primary scale-150' : ''
+                          <span className={`mt-1.5 w-1 h-1 rounded-full bg-foreground/70 transition-all duration-300 ${isHovered ? 'bg-primary scale-150' : ''
                             }`} />
                           <span className="leading-relaxed">{item}</span>
                         </li>
