@@ -13,8 +13,10 @@ export function Experience() {
           period: "Oct 2025 – Presente",
           responsibilities: [
             "Dirijo la estrategia y ejecución de la Transformación Digital de la organización",
-            "Lidero proyectos de innovación basados en IA, automatización y análisis de datos",
-            "Coordino la implementación del Plan Estratégico de Transformación Digital",
+            "Construí una plataforma digital propia de 7 aplicaciones integradas usando agentes de programación (Claude, Codex, Kimi)",
+            "Puse en producción 3 agentes de IA con autonomía medible (hasta 73% en facturación de compra)",
+            "Lidero el despliegue de coworkers, agentes personales de IA para cada área de la organización",
+            "Diseñé y coordino la implementación del Plan Estratégico de Transformación Digital 2027 (horizonte 2030)",
           ],
         },
         {

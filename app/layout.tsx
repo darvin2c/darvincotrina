@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s | Darvin Cotrina",
   },
   description:
-    "Ejecutivo en Transformación Digital con más de 15 años de experiencia liderando la modernización tecnológica en entornos corporativos. Especializado en IA, ecosistemas digitales y gobierno digital.",
+    "Ejecutivo en Transformación Digital con más de 15 años de experiencia liderando la modernización tecnológica en entornos corporativos. Especializado en agentes de IA, plataformas digitales propias y gobierno digital.",
   keywords: [
     "Transformación Digital",
     "Inteligencia Artificial",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Darvin Cotrina - Experto en Transformación Digital",
     description:
-      "Líder en transformación digital con experiencia en IA, integración de ecosistemas digitales y gobierno digital",
+      "Líder en transformación digital con experiencia en agentes de IA, plataformas digitales propias y gobierno digital",
     url: "https://darvincotrina.com",
     siteName: "Darvin Cotrina",
     locale: "es_ES",

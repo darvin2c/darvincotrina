@@ -93,7 +93,7 @@ export function Hero() {
 
           <p className="text-lg text-foreground/90 mb-8 max-w-3xl mx-auto text-balance leading-relaxed">
             Más de 15 años de experiencia liderando la modernización tecnológica en entornos corporativos. Especializado
-            en inteligencia artificial, integración de ecosistemas digitales y gobierno digital.
+            en agentes de IA, plataformas digitales propias y gobierno digital.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 mb-8 text-sm">
