@@ -1,0 +1,99 @@
+% CV - Darvin Cotrina Cervera
+% Formato basado en las guías de la Office of Career Services (OCS), Harvard University:
+% secciones Education -> Experience -> Skills, orden cronológico inverso,
+% bullets con verbo de acción + resultado medible, sin pronombres, una página.
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.55in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}        % Times New Roman (fuente recomendada por Harvard OCS)
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+% Estilo de sección: NOMBRE EN VERSALITAS con línea horizontal debajo (estilo OCS)
+\titleformat{\section}{\large\bfseries\scshape}{}{0pt}{}[\vspace{-4pt}\rule{\textwidth}{0.6pt}]
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+
+% Cargo + fechas en la misma línea
+\newcommand{\role}[2]{\textbf{#1}\hfill\textit{#2}\\[-2pt]}
+% Empresa + ubicación
+\newcommand{\employer}[2]{\textbf{#1}\hfill #2\\[-1pt]}
+
+\begin{document}
+
+% ---------- Encabezado ----------
+\begin{center}
+  {\LARGE\bfseries Darvin Cotrina Cervera}\\[2pt]
+  {\small Gerente de Transformación Digital}\\[3pt]
+  {\small Lima, Perú \textbar\ +51 948 269 619 \textbar\ \href{mailto:cc.darvin@gmail.com}{cc.darvin@gmail.com} \textbar\ \href{https://www.linkedin.com/in/darvin-cotrina}{linkedin.com/in/darvin-cotrina} \textbar\ \href{https://www.darvincotrina.com}{darvincotrina.com}}
+\end{center}
+\vspace{-8pt}
+
+% ---------- Educación ----------
+\section{Educación}
+\textbf{MIT Professional Education} \hfill 2024--2025\\
+Certificado Profesional en Transformación Digital\\[1pt]
+\textbf{MITx on edX} \hfill 2020--2021\\
+MicroMasters\textregistered\ Program in Statistics and Data Science\\[1pt]
+\textbf{Universidad de Lima} \hfill 2004--2009\\
+Ingeniería de Sistemas
+
+% ---------- Experiencia ----------
+\section{Experiencia}
+\employer{TDP CORP S.A.}{Lima, Perú}
+\role{Gerente de Transformación Digital}{oct 2025 -- Presente}
+\begin{itemize}[leftmargin=1.4em, nosep]
+  \item Dirigí la construcción de una plataforma digital propia con arquitectura AI-first y 7 aplicaciones integradas, desarrollada con agentes de programación (Claude, Codex, Kimi)
+  \item Puse en producción 3 agentes de IA para reconciliación bancaria y facturación de compras y ventas, alcanzando 73\% de autonomía medible
+  \item Lidero el despliegue de coworkers (agentes personales de IA) en las áreas de la organización para análisis de datos y asistencia operativa
+  \item Diseñé el Plan Estratégico de Transformación Digital 2027 con horizonte 2030, aprobado por la Alta Dirección
+\end{itemize}
+\vspace{2pt}
+\role{Jefe de Desarrollo e Innovación}{ago 2014 -- oct 2025}
+\begin{itemize}[leftmargin=1.4em, nosep]
+  \item Creé el área de Transformación Digital, formalizada y validada por la Alta Dirección como eje estratégico
+  \item Lideré la migración de los sistemas de gestión a SAP Business One y la integración de ERP, CRM Zoho e inteligencia artificial
+  \item Introduje la facturación electrónica, reduciendo más del 60\% los tiempos operativos
+  \item Automaticé procesos con RPA, incluyendo la carga y generación de facturas electrónicas hacia SAP
+  \item Dirigí el e-commerce corporativo, superando los 2,500 contactos generados desde la tienda en línea
+\end{itemize}
+\vspace{2pt}
+\role{Analista de Sistemas}{mar 2012 -- sep 2014}
+\begin{itemize}[leftmargin=1.4em, nosep]
+  \item Coordiné la migración corporativa a G Suite y administré los sistemas de gestión internos
+\end{itemize}
+\vspace{2pt}
+\role{Analista Programador}{ago 2011 -- mar 2012}
+\begin{itemize}[leftmargin=1.4em, nosep]
+  \item Desarrollé un Punto de Venta y un Sistema de Gestión Interno con generación de reportes
+\end{itemize}
+
+\vspace{3pt}
+\employer{PRODUCTOS AVON S.A.}{Lima, Perú}
+\role{Programador de Software}{sep 2008 -- abr 2009}
+\begin{itemize}[leftmargin=1.4em, nosep]
+  \item Diseñé un sistema de cruce de líneas telefónicas que redujo el proceso de 2 días a menos de 10 minutos
+\end{itemize}
+
+\vspace{3pt}
+\employer{UNIVERSIDAD DE LIMA}{Lima, Perú}
+\role{Soporte Técnico}{ene 2008 -- sep 2008}
+\begin{itemize}[leftmargin=1.4em, nosep]
+  \item Desarrollé utilitarios en C\#, VB y Java para los laboratorios académicos
+\end{itemize}
+
+% ---------- Certificaciones ----------
+\section{Certificaciones}
+\textbf{deeplearning.ai} --- Especialización en Inteligencia Artificial (2023); Deep Learning Specialization (2019--2020); Machine Learning Specialization\\[1pt]
+\textbf{MIT Professional Education} --- Cultural Awareness: Relaciones Interculturales en Negocios Globales (2024)
+
+% ---------- Habilidades ----------
+\section{Habilidades}
+\textbf{Estrategia y liderazgo:} Transformación digital, gestión del cambio, gobernanza de IA, PMO digital, metodologías ágiles (Scrum, DevOps), marcos COBIT, ITIL e ISO 27001\\[1pt]
+\textbf{Tecnologías:} Agentes de IA, IA generativa multi-modelo, RPA, ERP (SAP Business One), CRM (Zoho), e-commerce, WMS, cloud computing, analítica de datos, Python, SQL, Git
+
+\end{document}
