@@ -5,6 +5,27 @@ import { Rocket, Terminal } from "lucide-react"
 export function Projects() {
   const projects = [
     {
+      title: "Plataforma Digital Propia con IA",
+      year: "2026",
+      description: "Dirigí la construcción de un ecosistema AI-first con 7 aplicaciones integradas, desarrollado con agentes de programación",
+      tags: ["IA", "Plataforma"],
+      code: "platform.build()",
+    },
+    {
+      title: "Agentes de IA en Producción",
+      year: "2026",
+      description: "Desplegué agentes de IA para reconciliación bancaria, facturación de compras y ventas (autonomía de hasta el 73%) y atención al cliente vía chat",
+      tags: ["Agentes IA", "Automatización"],
+      code: "agents.deploy()",
+    },
+    {
+      title: "Coworkers: Agentes de IA por Área",
+      year: "En curso",
+      description: "Lidero el despliegue de coworkers (agentes personales de IA) en las áreas de la organización para análisis de datos y asistencia en el trabajo diario",
+      tags: ["Agentes IA", "Adopción"],
+      code: "coworkers.rollout()",
+    },
+    {
       title: "Área de Transformación Digital",
       year: "2025",
       description: "Formalicé y posicioné el área como eje estratégico validado por la Alta Dirección",
