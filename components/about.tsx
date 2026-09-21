@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card"
+import { TypedText } from "@/components/typed-text"
 import { Brain, Database, Shield, Zap } from "lucide-react"
 
 export function About() {
@@ -44,8 +45,8 @@ export function About() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <div className="inline-block font-mono text-sm text-foreground/70 mb-2">
-              <span className="text-secondary">{">"}</span> about.query()
+            <div className="inline-block font-mono text-lg text-primary mb-2">
+              <span className="text-secondary">{">"}</span> <TypedText text="about.query()" />
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-balance bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
               Sobre Mí
@@ -73,7 +74,7 @@ export function About() {
                     </div>
                     <div className="flex-1">
                       <h3 className="font-semibold text-lg mb-1">{item.title}</h3>
-                      <div className="font-mono text-xs text-secondary mb-2">{item.code}</div>
+                      <div className="font-mono text-sm text-secondary mb-2">{item.code}</div>
                       <p className="text-foreground/90 text-sm leading-relaxed">{item.description}</p>
                     </div>
                   </div>

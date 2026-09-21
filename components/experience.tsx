@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card"
+import { TypedText } from "@/components/typed-text"
 import { Badge } from "@/components/ui/badge"
 import { Briefcase, Calendar, Code2 } from "lucide-react"
 
@@ -81,8 +82,8 @@ export function Experience() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <div className="inline-block font-mono text-sm text-foreground/70 mb-2">
-              <span className="text-secondary">{">"}</span> experience.fetch()
+            <div className="inline-block font-mono text-lg text-primary mb-2">
+              <span className="text-secondary">{">"}</span> <TypedText text="experience.fetch()" />
             </div>
             <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
               Experiencia Profesional

@@ -1,6 +1,7 @@
 "use client"
 
 import { Card } from "@/components/ui/card"
+import { TypedText } from "@/components/typed-text"
 import { Button } from "@/components/ui/button"
 import { Mail, Phone, MapPin, Linkedin } from "lucide-react"
 
@@ -37,8 +38,8 @@ export function Contact() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-6">
-            <div className="inline-block font-mono text-sm text-foreground/70 mb-2">
-              <span className="text-primary">{">"}</span> contact.connect()
+            <div className="inline-block font-mono text-lg text-primary mb-2">
+              <span className="text-primary">{">"}</span> <TypedText text="contact.connect()" />
             </div>
             <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
               Contacto

@@ -59,9 +59,9 @@ export function Hero() {
             <div className="bg-card/80 backdrop-blur-sm border border-primary/30 rounded-lg p-4 shadow-2xl animate-pulse-glow">
               <div className="flex items-center gap-2 mb-2">
                 <Terminal className="h-4 w-4 text-primary" />
-                <span className="text-xs text-foreground/70 font-mono">~/profile/darvin-cotrina</span>
+                <span className="text-sm text-foreground/70 font-mono">~/profile/darvin-cotrina</span>
               </div>
-              <div className="font-mono text-left text-sm">
+              <div className="font-mono text-left text-base">
                 <span className="text-secondary">const</span> <span className="text-primary">profile</span>{" "}
                 <span className="text-foreground/70">=</span> <span className="text-accent">{"{"}</span>
                 <br />

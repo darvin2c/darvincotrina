@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { TypedText } from "@/components/typed-text"
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Lightbulb, Shield, Target, TrendingUp, Users, Zap } from "lucide-react"
@@ -65,8 +66,8 @@ export function Skills() {
         <div className="max-w-6xl mx-auto">
           {/* Header minimalista */}
           <div className="mb-16 text-center">
-            <div className="inline-block font-mono text-sm text-foreground/70 mb-2">
-              <span className="text-primary">{">"}</span> skills.display()
+            <div className="inline-block font-mono text-lg text-primary mb-2">
+              <span className="text-primary">{">"}</span> <TypedText text="skills.display()" />
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-2 text-foreground">
               Habilidades

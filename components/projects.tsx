@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card"
+import { TypedText } from "@/components/typed-text"
 import { Badge } from "@/components/ui/badge"
 import { Rocket, Terminal } from "lucide-react"
 
@@ -84,8 +85,8 @@ export function Projects() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <div className="inline-block font-mono text-sm text-foreground/70 mb-2">
-              <span className="text-secondary">{">"}</span> projects.showcase()
+            <div className="inline-block font-mono text-lg text-primary mb-2">
+              <span className="text-secondary">{">"}</span> <TypedText text="projects.showcase()" />
             </div>
             <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
               Proyectos Destacados
@@ -116,8 +117,8 @@ export function Projects() {
                         </Badge>
                       </div>
 
-                      <div className="mb-3 font-mono text-xs bg-background/50 border border-primary/20 rounded px-2 py-1 inline-flex items-center gap-1">
-                        <Terminal className="h-3 w-3 text-primary" />
+                      <div className="mb-3 font-mono text-sm bg-background/50 border border-primary/20 rounded px-2.5 py-1 inline-flex items-center gap-1.5">
+                        <Terminal className="h-3.5 w-3.5 text-primary" />
                         <span className="text-accent">{project.code}</span>
                       </div>
 
